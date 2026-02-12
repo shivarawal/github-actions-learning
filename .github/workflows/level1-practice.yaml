@@ -1,0 +1,11 @@
+name: Level 1 Practice
+on: workflow_dispatch
+jobs:
+   first-job:
+     runs-on: ubuntu-latest
+
+     steps:
+        - name: step 1
+          run: echo "Hello Github Actions"
+        - name: step 2 
+          run: pwd 
