@@ -5,7 +5,17 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-        - name: checkout code 
+        - name: checkout repository 
           uses: actions/checkout@v4
-        - name: list files
+        - name: who is running the this?
+          run: whoami
+        - name: current working directory 
+          run: pwd 
+        - name: List files in repository 
           run: ls -la 
+        - name: Number of files 
+          run: wc -l
+        - name: show OS details 
+          run: uname -a 
+
+          
