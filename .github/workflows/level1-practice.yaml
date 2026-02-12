@@ -14,7 +14,7 @@ jobs:
         - name: List files in repository 
           run: ls -la 
         - name: Number of files 
-          run: find . -type f -not -path "./git/*" | wc -l
+          run: find . -type f -not -path "./.git/*" | wc -l
         - name: show OS details 
           run: uname -a 
 
